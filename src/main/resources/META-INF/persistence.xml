@@ -9,7 +9,8 @@
         <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
 
         <!-- Classe d'entité -->
-        <class></class>
+        <class>com.ussd.ussdplateform.entities.Utilisateur</class>
+        <class>com.ussd.ussdplateform.entities.Transaction</class>
 
         <!-- Ajouter toutes les autres classes d'entité ici -->
 
@@ -18,6 +19,7 @@
             <property name="hibernate.dialect" value="org.hibernate.dialect.MySQL8Dialect" />
             <property name="hibernate.hbm2ddl.auto" value="update" />
             <property name="hibernate.show_sql" value="true" />
+            <property name="hibernate.format_sql" value="true"/>
             <property name="hibernate.connection.url" value="jdbc:mysql://localhost:3306/USSDPlateform?useUnicode=true&amp;characterEncoding=UTF-8&amp;serverTimezone=UTC" />
             <property name="hibernate.connection.username" value="root" />
             <property name="hibernate.connection.password" value="artemis_2005" />

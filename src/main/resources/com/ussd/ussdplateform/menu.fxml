@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="342.0" prefWidth="437.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <VBox layoutX="6.0" prefHeight="200.0" prefWidth="100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <padding>
+            <Insets bottom="15.0" left="25.0" right="25.0" top="15.0" />
+         </padding>
+         <children>
+            <Label prefHeight="30.0" prefWidth="426.0" text="1. Créer un compte">
+               <font>
+                  <Font name="FreeSans Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="35.0" layoutY="25.0" prefHeight="30.0" prefWidth="426.0" text="2. Effectuer un achat">
+               <font>
+                  <Font name="FreeSans Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="35.0" layoutY="55.0" prefHeight="30.0" prefWidth="426.0" text="3. Effectuer un retrait">
+               <font>
+                  <Font name="FreeSans Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="35.0" layoutY="85.0" prefHeight="30.0" prefWidth="426.0" text="4. Effectuer un dépot">
+               <font>
+                  <Font name="FreeSans Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="35.0" layoutY="145.0" prefHeight="30.0" prefWidth="426.0" text="5. Consulter mon compte">
+               <font>
+                  <Font name="FreeSans Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="35.0" layoutY="115.0" prefHeight="30.0" prefWidth="426.0" text="6. Consulter mon historique">
+               <font>
+                  <Font name="FreeSans Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="35.0" layoutY="115.0" prefHeight="30.0" prefWidth="426.0" text="7. Quitter">
+               <font>
+                  <Font name="FreeSans Bold" size="15.0" />
+               </font>
+            </Label>
+            <TextField prefHeight="39.0" prefWidth="387.0">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="FreeSans Bold" size="15.0" />
+               </font>
+            </TextField>
+            <HBox prefHeight="41.0" prefWidth="387.0" spacing="10.0">
+               <children>
+                  <Button mnemonicParsing="false" prefHeight="41.0" prefWidth="118.0" text="ANNULER">
+                     <font>
+                        <Font name="FreeSans Bold" size="13.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="118.0" text="ENVOYER">
+                     <font>
+                        <Font name="FreeSans Bold" size="13.0" />
+                     </font>
+                  </Button>
+               </children>
+               <VBox.margin>
+                  <Insets left="150.0" top="7.0" />
+               </VBox.margin>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

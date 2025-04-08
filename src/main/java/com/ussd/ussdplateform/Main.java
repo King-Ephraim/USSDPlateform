@@ -4,7 +4,10 @@ import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
+import org.hibernate.Session;
 
+import javax.persistence.EntityManagerFactory;
+import javax.persistence.Persistence;
 import java.io.IOException;
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -15,7 +18,7 @@ public class Main extends Application {
     public static void main(String[] args) {
         // Tester la connexion avant de lancer l'application JavaFX
         if (testDatabaseConnection()) {
-            launch();
+           launch() ;
         } else {
             System.out.println("Échec de la connexion à la base de données.");
         }
