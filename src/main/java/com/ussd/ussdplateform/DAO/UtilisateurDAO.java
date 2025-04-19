@@ -16,10 +16,19 @@ public class UtilisateurDAO {
         em = emf.createEntityManager() ;
     }
 
-    public void addUser(Utilisateur utilisateur){
+    public void rechercherParTelephone(String telephone) {
+
+    }
+    public void enregistrerUtilisateur(Utilisateur utilisateur){
         EntityTransaction transaction = em.getTransaction();
         transaction.begin();
         em.persist(utilisateur);
         transaction.commit();
     }
+
+    public void mettreAJourUtilisateur(Utilisateur utilisateur){
+
+    }
+
+
 }

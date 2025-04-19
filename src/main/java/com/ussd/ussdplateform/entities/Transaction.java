@@ -88,4 +88,13 @@ public class Transaction {
     public void setReference(String reference) {
         this.reference = reference;
     }
+
+//    public String genrerReference() {
+//
+//    }
+//
+//    public String genrerRecu(){
+//
+//    }
+
 }

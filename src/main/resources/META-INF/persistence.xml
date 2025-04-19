@@ -5,7 +5,7 @@
                  http://java.sun.com/xml/ns/persistence/persistence_2_2.xsd"
              version="2.0">
 
-    <persistence-unit name="default">
+    <persistence-unit name="jpa">
         <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
 
         <!-- Classe d'entité -->

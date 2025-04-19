@@ -72,4 +72,17 @@ public class Utilisateur {
     public void setTransactions(List<Transaction> transactions) {
         this.transactions = transactions;
     }
+    // methode pour verifier le pin d'un utilisateur
+//    public Boolean verifierPin(String pin) {
+//
+//    }
+//    //methode pour crediter son compte
+//    public void crediter(Double montant) {
+//
+//    }
+//    //methode pour debiter son compte
+//    public void debiter(Double montant) {
+//
+//    }
+
 }

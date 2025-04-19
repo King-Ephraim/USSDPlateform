@@ -9,12 +9,11 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-
 <AnchorPane prefHeight="342.0" prefWidth="437.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">
    <children>
       <VBox layoutX="6.0" prefHeight="200.0" prefWidth="100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <padding>
-            <Insets bottom="15.0" left="25.0" right="25.0" top="15.0" />
+            <Insets bottom="10.0" left="15.0" right="25.0" top="15.0" />
          </padding>
          <children>
             <Label prefHeight="30.0" prefWidth="426.0" text="1. Créer un compte">
@@ -52,7 +51,7 @@
                   <Font name="FreeSans Bold" size="15.0" />
                </font>
             </Label>
-            <TextField prefHeight="39.0" prefWidth="387.0">
+            <TextField prefHeight="39.0" prefWidth="387.0" style="-fx-background-color: transparent; -fx-border-color: transparent transparent #2756FF transparent; -fx-border-width: 2;">
                <VBox.margin>
                   <Insets top="10.0" />
                </VBox.margin>
@@ -62,19 +61,19 @@
             </TextField>
             <HBox prefHeight="41.0" prefWidth="387.0" spacing="10.0">
                <children>
-                  <Button mnemonicParsing="false" prefHeight="41.0" prefWidth="118.0" text="ANNULER">
+                  <Button mnemonicParsing="false" prefHeight="41.0" prefWidth="118.0" style="-fx-background-color: transparent;" text="ANNULER" textFill="#2756ff">
                      <font>
                         <Font name="FreeSans Bold" size="13.0" />
                      </font>
                   </Button>
-                  <Button layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="118.0" text="ENVOYER">
+                  <Button layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="118.0" style="-fx-background-color: transparent;" text="ENVOYER" textFill="#2756ff">
                      <font>
                         <Font name="FreeSans Bold" size="13.0" />
                      </font>
                   </Button>
                </children>
                <VBox.margin>
-                  <Insets left="150.0" top="7.0" />
+                  <Insets left="150.0" top="15.0" />
                </VBox.margin>
             </HBox>
          </children>
