@@ -8,7 +8,7 @@ import javax.persistence.EntityTransaction;
 import javax.persistence.Persistence;
 
 public class UtilisateurDAO {
-    private static EntityManagerFactory emf = Persistence.createEntityManagerFactory("default") ;
+    private static EntityManagerFactory emf = Persistence.createEntityManagerFactory("jpa") ;
     private EntityManager em ;
 
 

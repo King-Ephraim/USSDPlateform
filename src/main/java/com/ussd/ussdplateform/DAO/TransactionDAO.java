@@ -11,4 +11,7 @@ public class TransactionDAO {
     public TransactionDAO(){
         em = emf.createEntityManager();
     }
+
+
+
 }

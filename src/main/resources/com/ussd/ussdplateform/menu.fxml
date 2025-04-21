@@ -9,7 +9,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="342.0" prefWidth="437.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane prefHeight="374.0" prefWidth="437.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ussd.ussdplateform.UssdController">
    <children>
       <VBox layoutX="6.0" prefHeight="200.0" prefWidth="100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <padding>
@@ -51,7 +51,7 @@
                   <Font name="FreeSans Bold" size="15.0" />
                </font>
             </Label>
-            <TextField prefHeight="39.0" prefWidth="387.0" style="-fx-background-color: transparent; -fx-border-color: transparent transparent #2756FF transparent; -fx-border-width: 2;">
+            <TextField fx:id="menuInput" prefHeight="39.0" prefWidth="387.0" style="-fx-background-color: transparent; -fx-border-color: transparent transparent #2756FF transparent; -fx-border-width: 2;">
                <VBox.margin>
                   <Insets top="10.0" />
                </VBox.margin>
@@ -59,21 +59,29 @@
                   <Font name="FreeSans Bold" size="15.0" />
                </font>
             </TextField>
+            <Label fx:id="errorMenuLabel" alignment="CENTER" layoutX="25.0" layoutY="205.0" prefHeight="33.0" prefWidth="397.0" textFill="#c72323">
+               <font>
+                  <Font name="FreeSans" size="13.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="7.0" />
+               </VBox.margin>
+            </Label>
             <HBox prefHeight="41.0" prefWidth="387.0" spacing="10.0">
                <children>
-                  <Button mnemonicParsing="false" prefHeight="41.0" prefWidth="118.0" style="-fx-background-color: transparent;" text="ANNULER" textFill="#2756ff">
+                  <Button mnemonicParsing="false" onMouseClicked="#cancel" prefHeight="41.0" prefWidth="118.0" style="-fx-background-color: transparent;" text="ANNULER" textFill="#2756ff">
                      <font>
                         <Font name="FreeSans Bold" size="13.0" />
                      </font>
                   </Button>
-                  <Button layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="118.0" style="-fx-background-color: transparent;" text="ENVOYER" textFill="#2756ff">
+                  <Button layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onMouseClicked="#send" prefHeight="41.0" prefWidth="118.0" style="-fx-background-color: transparent;" text="ENVOYER" textFill="#2756ff">
                      <font>
                         <Font name="FreeSans Bold" size="13.0" />
                      </font>
                   </Button>
                </children>
                <VBox.margin>
-                  <Insets left="150.0" top="15.0" />
+                  <Insets left="150.0" />
                </VBox.margin>
             </HBox>
          </children>

@@ -20,7 +20,6 @@ public class Main extends Application {
         if (testDatabaseConnection() && testHibernateConnection()) {
            launch() ;
 
-
         } else {
             System.out.println("Échec de la connexion à la base de données.");
         }
@@ -29,7 +28,7 @@ public class Main extends Application {
     public void start(Stage stage) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("ussd.fxml"));
         Scene scene = new Scene(fxmlLoader.load());
-        stage.setTitle("Hello!");
+        stage.setTitle("USSD PLATEFORME");
         stage.setScene(scene);
         stage.show();
     }
